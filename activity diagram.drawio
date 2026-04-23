@@ -1,0 +1,185 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram name="Use Case" id="0">
+    <mxGraphModel dx="1338" dy="1234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Activity" id="1">
+    <mxGraphModel dx="1029" dy="949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lane_p" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Patient (المريض)" vertex="1">
+          <mxGeometry height="850" width="240" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start_p" parent="lane_p" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p_auth" parent="lane_p" style="rhombus;whiteSpace=wrap;html=1;" value="Login / Sign up" vertex="1">
+          <mxGeometry height="60" width="100" x="70" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p_dash" parent="lane_p" style="rounded=1;whiteSpace=wrap;html=1;" value="Patient Dashboard" vertex="1">
+          <mxGeometry height="40" width="120" x="60" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="upload" parent="lane_p" style="rounded=1;whiteSpace=wrap;html=1;" value="Upload brain scan" vertex="1">
+          <mxGeometry height="40" width="120" x="60" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="lane_p" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="Error Message" vertex="1">
+          <mxGeometry height="40" width="120" x="60" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="view_pre" parent="lane_p" style="rounded=1;whiteSpace=wrap;html=1;" value="View preliminary result" vertex="1">
+          <mxGeometry height="40" width="130" x="55" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="view_final" parent="lane_p" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="View final report" vertex="1">
+          <mxGeometry height="40" width="130" x="55" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="end_p" parent="lane_p" style="ellipse;html=1;shape=endState;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="105" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_ai" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="AI Model / System" vertex="1">
+          <mxGeometry height="850" width="260" x="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="lane_ai" style="rhombus;whiteSpace=wrap;html=1;" value="Valid?" vertex="1">
+          <mxGeometry height="60" width="80" x="90" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="analyze" parent="lane_ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;" value="AI Analysis &amp; Classify" vertex="1">
+          <mxGeometry height="40" width="140" x="60" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="gen_pre" parent="lane_ai" style="rounded=1;whiteSpace=wrap;html=1;" value="Generate Result" vertex="1">
+          <mxGeometry height="40" width="140" x="60" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="fork" parent="lane_ai" style="line;strokeWidth=6;" value="" vertex="1">
+          <mxGeometry height="10" width="220" x="20" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="store" parent="lane_ai" style="rounded=1;whiteSpace=wrap;html=1;" value="Store report" vertex="1">
+          <mxGeometry height="40" width="140" x="60" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_d" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" value="Doctor (الطبيب)" vertex="1">
+          <mxGeometry height="850" width="250" x="540" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="start_d" parent="lane_d" style="ellipse;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="110" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d_auth" parent="lane_d" style="rounded=1;whiteSpace=wrap;html=1;" value="Doctor Login" vertex="1">
+          <mxGeometry height="40" width="120" x="65" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="lane_d" style="rounded=1;whiteSpace=wrap;html=1;" value="Receive Notification" vertex="1">
+          <mxGeometry height="40" width="120" x="65" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="lane_d" style="rounded=1;whiteSpace=wrap;html=1;" value="Review Scan" vertex="1">
+          <mxGeometry height="40" width="130" x="60" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="agree" parent="lane_d" style="rhombus;whiteSpace=wrap;html=1;" value="Agree?" vertex="1">
+          <mxGeometry height="60" width="80" x="85" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="modify" parent="lane_d" style="rounded=1;whiteSpace=wrap;html=1;" value="Modify" vertex="1">
+          <mxGeometry height="30" width="95" x="145" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="sign" parent="lane_d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" value="Sign Report" vertex="1">
+          <mxGeometry height="40" width="120" x="65" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="start_p" target="p_auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="p_auth" target="p_dash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="p_dash" target="upload">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="upload" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" edge="1" parent="1" source="valid" target="error" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" edge="1" parent="1" source="valid" target="analyze" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" edge="1" parent="1" source="analyze" target="gen_pre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" edge="1" parent="1" source="gen_pre" target="fork">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" edge="1" parent="1" source="fork" target="view_pre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" edge="1" parent="1" source="fork" target="notify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" edge="1" parent="1" source="start_d" target="d_auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" edge="1" parent="1" source="notify" target="review">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" edge="1" parent="1" source="review" target="agree">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" edge="1" parent="1" source="agree" target="modify" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" edge="1" parent="1" source="agree" target="sign" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" edge="1" parent="1" source="modify" target="sign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" edge="1" parent="1" source="sign" target="store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" edge="1" parent="1" source="store" target="view_final">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" edge="1" parent="1" source="view_final" target="end_p">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Class" id="2">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="User" value="User&#xa;-id&#xa;-name&#xa;-email" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="40" width="180" height="80" />
+        </mxCell>
+        <mxCell id="Patient" value="Patient" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="150" width="180" height="80" />
+        </mxCell>
+        <mxCell id="Doctor" value="Doctor" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="260" width="180" height="80" />
+        </mxCell>
+        <mxCell id="Scan" value="ScanImage&#xa;-id&#xa;-imagePath" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="300" y="40" width="180" height="80" />
+        </mxCell>
+        <mxCell id="Result" value="AnalysisResult&#xa;-result&#xa;-confidence" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="300" y="150" width="180" height="80" />
+        </mxCell>
+        <mxCell id="Report" value="Report&#xa;-text&#xa;-date" style="shape=rectangle;" parent="1" vertex="1">
+          <mxGeometry x="300" y="260" width="180" height="80" />
+        </mxCell>
+        <mxCell id="r1" value="" style="endArrow=block;" parent="1" edge="1" source="Patient" target="User">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="r2" value="" style="endArrow=block;" parent="1" edge="1" source="Doctor" target="User">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="r3" value="" style="endArrow=block;" parent="1" edge="1" source="Scan" target="Patient">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="r4" value="" style="endArrow=block;" parent="1" edge="1" source="Result" target="Scan">
+          <mxGeometry relative="1" />
+        </mxCell>
+        <mxCell id="r5" value="" style="endArrow=block;" parent="1" edge="1" source="Report" target="Doctor">
+          <mxGeometry relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
